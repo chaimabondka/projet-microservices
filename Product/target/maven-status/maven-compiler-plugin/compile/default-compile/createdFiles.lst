@@ -1,0 +1,5 @@
+com\esprit\microservice\Productservice\Product.class
+com\esprit\microservice\Productservice\ProductApplication.class
+com\esprit\microservice\Productservice\ProductRestAPI.class
+com\esprit\microservice\Productservice\ProductService.class
+com\esprit\microservice\Productservice\ProductRepository.class
