@@ -100,6 +100,23 @@ services:
       - 3000:3000
     depends_on:
       - prometheus
+  Auth:
+    container_name: Auth
+    build: ./Auth
+    ports:
+      - "4001:4001"
+    hostname: Auth
+    image: "auth"
+    depends_on:
+      - "db"
+  db:
+    container_name: Mongo
+    image: "mongo:5-focal"
+    ports:
+      - "27017:27017"
+    hostname: Mongo
+    depends_on:
+      - "Eureka"
 volumes:
   db:
   prometheus_data: {}
