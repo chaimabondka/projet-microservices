@@ -21,9 +21,9 @@ const Eureka = require('eureka-js-client').Eureka;
 const eureka = new Eureka({
   instance: {
     app: 'expressservice',
-    hostName: 'Eureka',
-    ipAddr: 'Eureka',
-    statusPageUrl: 'http://Eureka:4001',
+    hostName: 'localhost',
+    ipAddr: '127.0.0.1',
+    statusPageUrl: 'http://localhost:4001',
     port: {
       '$': 4001,
       '@enabled': 'true',
@@ -35,7 +35,7 @@ const eureka = new Eureka({
     }
   },
   eureka: {
-    host: 'Eureka',
+    host: 'host.docker.internal',
     port: 8761,
     servicePath: '/eureka/apps/'
   }
