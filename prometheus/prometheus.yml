@@ -34,7 +34,7 @@ scrape_configs:
       - targets: ['host.docker.internal:8087']
         labels:
           group: 'production'
-  - job_name: 'facture'
+  - job_name: 'client'
     metrics_path: 'actuator/prometheus'
     scrape_interval: 10s
     static_configs:
